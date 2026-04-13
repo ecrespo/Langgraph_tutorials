@@ -1,0 +1,2 @@
+from langgraph_state_typed import build_graph
+build_graph()

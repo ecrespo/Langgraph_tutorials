@@ -1,0 +1,17 @@
+[project]
+name = "langgraph-tutorials"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cudf-cu13>=26.4.0",
+    "ipython>=9.12.0",
+    "langchain-experimental>=0.4.1",
+    "langchain-openai>=1.1.12",
+    "langgraph>=1.1.6",
+    "langgraph-checkpoint-sqlite>=3.0.3",
+    "langgraph-cli>=0.4.21",
+    "openai>=2.31.0",
+    "python-dotenv>=1.2.2",
+]
