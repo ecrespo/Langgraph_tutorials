@@ -20,7 +20,7 @@ import textwrap
 import os
 
 from dotenv import load_dotenv
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_anthropic import ChatAnthropic
 
 from langgraph.graph import StateGraph, END
 from langgraph.types import Command, interrupt
@@ -28,13 +28,13 @@ from langgraph.checkpoint.memory import InMemorySaver
 
 
 load_dotenv()
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-if not GOOGLE_API_KEY:
-    raise ValueError("Missing GOOGLE_API_KEY in environment. Add it to your .env file.")
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+if not ANTHROPIC_API_KEY:
+    raise ValueError("Missing ANTHROPIC_API_KEY in environment. Add it to your .env file.")
 
-llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
-    temperature=0.2,
+llm = ChatAnthropic(
+    model="claude-opus-4-7",
+    max_tokens=16000,
 )
 
 # State schema
