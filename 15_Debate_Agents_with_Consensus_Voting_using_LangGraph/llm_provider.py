@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_anthropic import ChatAnthropic
 
 # Load environment variables from .env file
 load_dotenv()
@@ -8,16 +8,16 @@ load_dotenv()
 
 def get_llm():
     # Read API key and model name from environment
-    api_key = os.getenv("GEMINI_API_KEY")
-    model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+    api_key = os.getenv("ANTHROPIC_API_KEY")
+    model = os.getenv("ANTHROPIC_MODEL", "claude-sonnet-4-6")
 
     # Fail fast if API key is missing
     if not api_key:
-        raise ValueError("GEMINI_API_KEY is missing in .env")
+        raise ValueError("ANTHROPIC_API_KEY is missing in .env")
 
-    # Initialize and return Gemini chat model
-    return ChatGoogleGenerativeAI(
+    # Initialize and return Claude chat model
+    return ChatAnthropic(
         model=model,
         api_key=api_key,
-        temperature=0  # Deterministic output
+        temperature=0,  # Deterministic output
     )

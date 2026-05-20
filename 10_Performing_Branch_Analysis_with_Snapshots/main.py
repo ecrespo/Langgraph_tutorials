@@ -15,7 +15,7 @@ from dotenv import load_dotenv
 
 from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import InMemorySaver
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_anthropic import ChatAnthropic
 
 
 # --- State ---
@@ -154,10 +154,13 @@ def main():
     load_dotenv()
     global model
 
-    if not os.environ.get("GOOGLE_API_KEY"):
-        raise RuntimeError("GOOGLE_API_KEY not set.")
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        raise RuntimeError("ANTHROPIC_API_KEY not set.")
 
-    model = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0)
+    model = ChatAnthropic(
+        model=os.getenv("ANTHROPIC_MODEL", "claude-sonnet-4-6"),
+        temperature=0,
+    )
 
     graph = build_graph()
 

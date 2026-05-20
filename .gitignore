@@ -206,3 +206,20 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 checkpoints.db
+
+# ---------------------------------------------------------------------------
+# Project-specific
+# ---------------------------------------------------------------------------
+
+
+
+
+# Isolated sub-project venvs under envs/ (also covered by global .venv)
+envs/*/.venv/
+
+# OS / editor noise
+.DS_Store
+
+.idea
+.idea/
+

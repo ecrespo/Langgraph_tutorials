@@ -2,7 +2,7 @@ from langchain_core.messages import HumanMessage
 from llm_provider import get_llm
 from debate_graph import build_graph
 
-print(" Debate Agents with Consensus Voting (LangGraph + Gemini)")
+print(" Debate Agents with Consensus Voting (LangGraph + Claude)")
 
 def print_trace(messages):
     # Display ordered debate messages

@@ -6,7 +6,7 @@ from message_passing_graph import build_graph
 def banner():
     # Print header
     print("\n" + "=" * 60)
-    print(" Message Passing Across Agent Nodes (LangGraph + Gemini)")
+    print(" Message Passing Across Agent Nodes (LangGraph + Claude)")
     print("=" * 60)
     print("Flow: generator → reviewer → refiner\n")
 

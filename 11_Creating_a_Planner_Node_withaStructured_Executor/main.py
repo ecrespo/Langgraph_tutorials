@@ -8,16 +8,16 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.types import Command, interrupt
 from langgraph.checkpoint.memory import InMemorySaver
 from dotenv import load_dotenv
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_anthropic import ChatAnthropic
 
 load_dotenv()
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-if not GOOGLE_API_KEY:
-    raise RuntimeError("GOOGLE_API_KEY not found. Please set it in your environment or .env file.")
+ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
+if not ANTHROPIC_API_KEY:
+    raise RuntimeError("ANTHROPIC_API_KEY not found. Please set it in your environment or .env file.")
 
 def get_llm():
-    return ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash",
+    return ChatAnthropic(
+        model=os.getenv("ANTHROPIC_MODEL", "claude-sonnet-4-6"),
         temperature=0.2,
     )
 

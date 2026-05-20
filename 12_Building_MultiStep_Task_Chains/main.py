@@ -4,20 +4,23 @@ from typing import TypedDict, Annotated, Sequence, Dict, Any
 import operator
 import os
 
+from dotenv import load_dotenv
+
 from langgraph.graph import StateGraph, END
 from langgraph.types import interrupt, Command
 from langgraph.checkpoint.memory import InMemorySaver
 
-from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_anthropic import ChatAnthropic
 
 
-if not os.getenv("GOOGLE_API_KEY"):
-    raise RuntimeError("GOOGLE_API_KEY not set")
+load_dotenv()
+if not os.getenv("ANTHROPIC_API_KEY"):
+    raise RuntimeError("ANTHROPIC_API_KEY not set")
 
 
 def build_llm():
-    return ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash",
+    return ChatAnthropic(
+        model=os.getenv("ANTHROPIC_MODEL", "claude-sonnet-4-6"),
         temperature=0.3,
     )
 
