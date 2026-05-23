@@ -211,8 +211,10 @@ checkpoints.db
 # Project-specific
 # ---------------------------------------------------------------------------
 
-
-
+# Large datasets exceeding GitHub's 100MB file size limit.
+# PaySim synthetic fraud dataset (~471MB) — download from Kaggle:
+#   https://www.kaggle.com/datasets/ealaxi/paysim1
+data/PS_*.csv
 
 # Isolated sub-project venvs under envs/ (also covered by global .venv)
 envs/*/.venv/
@@ -223,3 +225,5 @@ envs/*/.venv/
 .idea
 .idea/
 
+
+.env
