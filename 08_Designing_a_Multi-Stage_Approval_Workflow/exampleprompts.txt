@@ -1,5 +1,0 @@
-1. Write a Python function sanitize_username(username: str) -> str that cleans and validates a username for a web application.
-2. Logic works fine
-3. One of the edge cases is not working.... will have to see the logic of code later
-4. Scales fine
-5. It does not integrate well with the web design
