@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "timestamp": "20260524_164208",
+    "dataset": "Amazon Fine Food Reviews (Kaggle: snap/amazon-fine-food-reviews)",
+    "patron_langgraph": "Patrón 5: Parallel Map-Reduce (Fan-out / Fan-in)",
+    "total_reviews_analizadas": 30,
+    "categorias": 5,
+    "tiempo_proceso_segundos": 19.46
+  },
+  "reporte_ejecutivo": {
+    "executive_summary": "# REPORTE EJECUTIVO - SATISFACCIÓN DE CLIENTES\n**Período:** Mes actual | **Categorías analizadas:** 5 | **Total reviews:** 30\n\n---\n\n## 1. RESUMEN EJECUTIVO\nEl portafolio presenta un desempeño mixto con puntuaciones que oscilan entre 3.33 y 3.83 estrellas, indicando oportunidades de mejora significativas. Las categorías premium (Café y Té, Condimentos) mantienen sentimientos positivos, mientras que las categorías masivas (Bebidas, Cereales, Snacks) muestran neutralidad preocupante. Existe una categoría crítica que requiere intervención inmediata para evitar deterioro de la reputación de marca.\n\n## 2. TOP CATEGORÍA\n**🏆 Café y Té** - La estrella del portafolio con sentimiento \"Muy Positivo\" y 3.83/5 estrellas. Destaca por su calidad excepcional, aroma equilibrado y empaquetado superior que genera alta satisfacción sin puntos negativos identificados.\n\n## 3. CATEGORÍA PROBLEMA\n**⚠️ Snacks** - Categoría en estado crítico con sentimiento neutro y múltiples problemas: sabor artificial que genera devoluciones, inconsistencia de calidad y falta de variedad. **ACCIÓN INMEDIATA:** Reformular producto y expandir gama de sabores en 30 días.\n\n## 4. ALERTAS TOTALES\n**1 categoría** con alerta crítica activa (Snacks)\n\n## 5. PRIORIDADES Q4\n1. **CRÍTICO:** Reformulación completa línea Snacks - eliminar sabores artificiales y ampliar variedad\n2. **ALTO:** Estandarizar controles de calidad en Condimentos para eliminar inconsistencias de textura\n3. **MEDIO:** Rediseñar packaging Bebidas y alinear marketing con experiencia real del producto\n\n## 6. TENDENCIA GENERAL\n**📊 ESTABLE CON RIESGOS** - El negocio muestra estabilidad en categorías premium pero presenta vulnerabilidad en productos masivos. La concentración de sentimientos neutros (60% de categorías) indica riesgo de pérdida de clientes hacia competencia más diferenciada.\n\n---\n**Próxima revisión:** 30 días | **Responsable:** Dirección E-commerce",
+    "total_categories": 5,
+    "categories_with_alerts": 1,
+    "alert_categories": [
+      "Snacks"
+    ],
+    "best_category": "Café y Té",
+    "worst_category": "Bebidas",
+    "individual_reports": [
+      {
+        "category": "Bebidas",
+        "total_reviews": 6,
+        "avg_score": 3.33,
+        "sentiment": "Neutro",
+        "positive_themes": "Calidad del producto, sabor excelente, ingredientes naturales sin conservantes",
+        "negative_themes": "Envase difícil de abrir, publicidad engañosa, sabor no coincide con expectativas visuales",
+        "critical_alert": "NO",
+        "recommendation": "Revisar la coherencia entre las imágenes promocionales y el sabor real del producto para evitar expectativas incorrectas. Evaluar el rediseño del envase para facilitar su apertura.",
+        "summary": "Los clientes valoran la calidad natural del producto y su sabor, pero existe una desconexión entre las expectativas generadas por la publicidad y la experiencia real. Los problemas de packaging y comunicación visual requieren atención para mejorar la satisfacción general.",
+        "raw_response": "SENTIMIENTO_GENERAL: Neutro\n\nTEMAS_POSITIVOS: Calidad del producto, sabor excelente, ingredientes naturales sin conservantes\n\nTEMAS_NEGATIVOS: Envase difícil de abrir, publicidad engañosa, sabor no coincide con expectativas visuales\n\nALERTA_CRITICA: NO\n\nRECOMENDACION: Revisar la coherencia entre las imágenes promocionales y el sabor real del producto para evitar expectativas incorrectas. Evaluar el rediseño del envase para facilitar su apertura.\n\nRESUMEN: Los clientes valoran la calidad natural del producto y su sabor, pero existe una desconexión entre las expectativas generadas por la publicidad y la experiencia real. Los problemas de packaging y comunicación visual requieren atención para mejorar la satisfacción general."
+      },
+      {
+        "category": "Café y Té",
+        "total_reviews": 6,
+        "avg_score": 3.83,
+        "sentiment": "Muy Positivo",
+        "positive_themes": "Calidad excepcional del café, aroma y sabor equilibrado, empaquetado y frescura del producto",
+        "negative_themes": "No se identifican temas negativos en las reviews analizadas",
+        "critical_alert": "NO",
+        "recommendation": "Mantener los estándares actuales de calidad y empaquetado que están generando alta satisfacción. Considerar ampliar la línea de productos aprovechando la excelente reputación de la marca.",
+        "summary": "Las reviews muestran una satisfacción excepcional con puntuaciones perfectas que destacan la calidad superior del café y el cuidado en el empaquetado. Los clientes expresan alta fidelización y recomendación activa del producto.",
+        "raw_response": "SENTIMIENTO_GENERAL: Muy Positivo\n\nTEMAS_POSITIVOS: Calidad excepcional del café, aroma y sabor equilibrado, empaquetado y frescura del producto\n\nTEMAS_NEGATIVOS: No se identifican temas negativos en las reviews analizadas\n\nALERTA_CRITICA: NO\n\nRECOMENDACION: Mantener los estándares actuales de calidad y empaquetado que están generando alta satisfacción. Considerar ampliar la línea de productos aprovechando la excelente reputación de la marca.\n\nRESUMEN: Las reviews muestran una satisfacción excepcional con puntuaciones perfectas que destacan la calidad superior del café y el cuidado en el empaquetado. Los clientes expresan alta fidelización y recomendación activa del producto."
+      },
+      {
+        "category": "Cereales",
+        "total_reviews": 6,
+        "avg_score": 3.33,
+        "sentiment": "Positivo",
+        "positive_themes": "Calidad nutricional y saludable, textura crujiente agradable, aceptación familiar especialmente niños",
+        "negative_themes": "Producto percibido como básico sin diferenciación, falta de características extraordinarias que destaquen",
+        "critical_alert": "NO",
+        "recommendation": "Desarrollar elementos diferenciadores que eleven la percepción del producto más allá de \"correcto para el precio\". Considerar mejoras en sabor, presentación o beneficios nutricionales adicionales para convertir clientes neutrales en promotores.",
+        "summary": "Los cereales tienen una recepción mayoritariamente positiva por su valor nutricional y aceptación familiar, pero existe una oportunidad de mejora en diferenciación. El producto cumple expectativas básicas pero carece de elementos que generen entusiasmo en todos los segmentos de clientes.",
+        "raw_response": "SENTIMIENTO_GENERAL: Positivo\n\nTEMAS_POSITIVOS: Calidad nutricional y saludable, textura crujiente agradable, aceptación familiar especialmente niños\n\nTEMAS_NEGATIVOS: Producto percibido como básico sin diferenciación, falta de características extraordinarias que destaquen\n\nALERTA_CRITICA: NO\n\nRECOMENDACION: Desarrollar elementos diferenciadores que eleven la percepción del producto más allá de \"correcto para el precio\". Considerar mejoras en sabor, presentación o beneficios nutricionales adicionales para convertir clientes neutrales en promotores.\n\nRESUMEN: Los cereales tienen una recepción mayoritariamente positiva por su valor nutricional y aceptación familiar, pero existe una oportunidad de mejora en diferenciación. El producto cumple expectativas básicas pero carece de elementos que generen entusiasmo en todos los segmentos de clientes."
+      },
+      {
+        "category": "Condimentos",
+        "total_reviews": 6,
+        "avg_score": 3.83,
+        "sentiment": "Positivo",
+        "positive_themes": "Versatilidad del producto que combina bien con diferentes comidas, sabor auténtico y agradable, producto que genera satisfacción familiar",
+        "negative_themes": "Inconsistencia en la textura entre diferentes lotes de producción, sabor percibido como genérico comparado con alternativas locales",
+        "critical_alert": "NO",
+        "recommendation": "Implementar controles de calidad más estrictos para estandarizar la consistencia del producto entre lotes. Evaluar el perfil de sabor para diferenciarlo mejor de la competencia local.",
+        "summary": "Los clientes valoran la versatilidad y sabor del condimento, siendo un producto que se integra bien en el uso cotidiano. Sin embargo, existen oportunidades de mejora en consistencia del producto y diferenciación frente a opciones locales.",
+        "raw_response": "SENTIMIENTO_GENERAL: Positivo\n\nTEMAS_POSITIVOS: Versatilidad del producto que combina bien con diferentes comidas, sabor auténtico y agradable, producto que genera satisfacción familiar\n\nTEMAS_NEGATIVOS: Inconsistencia en la textura entre diferentes lotes de producción, sabor percibido como genérico comparado con alternativas locales\n\nALERTA_CRITICA: NO\n\nRECOMENDACION: Implementar controles de calidad más estrictos para estandarizar la consistencia del producto entre lotes. Evaluar el perfil de sabor para diferenciarlo mejor de la competencia local.\n\nRESUMEN: Los clientes valoran la versatilidad y sabor del condimento, siendo un producto que se integra bien en el uso cotidiano. Sin embargo, existen oportunidades de mejora en consistencia del producto y diferenciación frente a opciones locales."
+      },
+      {
+        "category": "Snacks",
+        "total_reviews": 6,
+        "avg_score": 3.33,
+        "sentiment": "Neutro",
+        "positive_themes": "Sabor adictivo y atractivo, Textura crujiente satisfactoria, Producto ideal para entretenimiento",
+        "negative_themes": "Sabor artificial desagradable, Falta de variedad de sabores, Calidad inconsistente del producto",
+        "critical_alert": "SI",
+        "recommendation": "Revisar urgentemente la formulación del producto para eliminar el sabor artificial que genera devoluciones y expandir la gama de sabores disponibles. Implementar controles de calidad más estrictos para asegurar consistencia en el sabor entre lotes.",
+        "summary": "Los snacks muestran potencial con clientes que valoran su sabor adictivo y textura, pero enfrentan problemas críticos de calidad que generan devoluciones. La inconsistencia en el sabor y la limitada variedad requieren atención inmediata para mejorar la experiencia del cliente.",
+        "raw_response": "SENTIMIENTO_GENERAL: Neutro\n\nTEMAS_POSITIVOS: Sabor adictivo y atractivo, Textura crujiente satisfactoria, Producto ideal para entretenimiento\n\nTEMAS_NEGATIVOS: Sabor artificial desagradable, Falta de variedad de sabores, Calidad inconsistente del producto\n\nALERTA_CRITICA: SI\n\nRECOMENDACION: Revisar urgentemente la formulación del producto para eliminar el sabor artificial que genera devoluciones y expandir la gama de sabores disponibles. Implementar controles de calidad más estrictos para asegurar consistencia en el sabor entre lotes.\n\nRESUMEN: Los snacks muestran potencial con clientes que valoran su sabor adictivo y textura, pero enfrentan problemas críticos de calidad que generan devoluciones. La inconsistencia en el sabor y la limitada variedad requieren atención inmediata para mejorar la experiencia del cliente."
+      }
+    ]
+  }
+}

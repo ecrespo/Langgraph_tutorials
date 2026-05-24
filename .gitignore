@@ -225,3 +225,5 @@ envs/*/.venv/
 .idea
 .idea/
 
+
+.env

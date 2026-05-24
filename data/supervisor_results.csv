@@ -1,59 +1,77 @@
 ticket_id,ticket_type,priority,agent_response,ground_truth
-1398,Billing inquiry,Low,[],Star hold sport him worker.
-8031,Billing inquiry,Low,"---
+4263,Billing inquiry,Medium,"## ⚠️ Ticket Incompleto — Acción Requerida
 
-Estimado **Dalton Evans**, hemos revisado su caso con nuestro equipo de facturación. Para poder asistirle de manera efectiva, le pedimos amablemente que nos proporcione la información indicada arriba. ¡Estamos listos para ayudarle! 😊",
-1419,Cancellation request,Medium,"---
-
-Estimada **Maria Gonzalez**, hemos recibido su ticket #1419 y lo estamos atendiendo. Sin embargo, necesitamos su ayuda para poder asistirle correctamente:
-
-> 📌 **¿Podría confirmarnos el modelo exacto de su cámara Nikon?** (por ejemplo: Nikon D3500, D7500, D850, etc.)
-> 📌 **¿Su solicitud principal es cancelar algo, o desea soporte técnico por el problema de pantalla?**
-
-Con esta información, podremos brindarle una solución mucho más precisa y rápida. ¡Gracias por su paciencia! 🙏",
-3402,Cancellation request,Critical,[],
-1908,Product inquiry,Low,[],
-1876,Product inquiry,Low,"## ⚠️ Ticket #1876 — Problema Detectado Antes de Enrutar
-
-Hola, antes de proceder con la atención al cliente **Adam Lee**, he identificado un problema importante en este ticket:
+He detectado un problema con el **Ticket #4263** antes de proceder con el enrutamiento.
 
 ---
 
-### 🔴 Datos Incompletos / Variables Sin Reemplazar
+### 🔍 Problema Identificado
 
-El ticket contiene **campos de plantilla que no fueron completados correctamente**:
+La descripción del ticket contiene **variables sin reemplazar**:
 
-| Campo | Estado |
-|-------|--------|
-| `{product_purchased}` | ❌ Variable sin reemplazar (aparece 2 veces) |
-| `{error_message}` | ❌ Variable sin reemplazar |
+- `{product_purchased}` aparece **2 veces** en el cuerpo del mensaje y **no fue sustituida** por el valor real del producto.
 
----
+Aunque el ticket indica que el producto es una **LG Washing Machine**, la descripción parece ser una **plantilla genérica mal procesada**, lo que genera inconsistencias adicionales:
 
-### 📋 Análisis del Ticket
-
-- **Producto declarado en el encabezado:** Sony PlayStation
-- **Tipo:** Consulta de producto / Problema de hardware
-- **Prioridad:** Low
-
-A pesar de que el encabezado menciona *Sony PlayStation*, la descripción del ticket hace referencia a `{product_purchased}` y `{error_message}` como variables de plantilla que **nunca fueron sustituidas** con información real del cliente.
+| Campo | Valor |
+|---|---|
+| **Tipo declarado** | Billing inquiry |
+| **Asunto declarado** | Hardware issue |
+| **Descripción** | Hace referencia a ""limpiar caché y datos de una app"" — algo inconsistente con una lavadora |
 
 ---
 
-### ✅ Acción Requerida
+### 📋 Acción Necesaria
 
-Para poder enrutar este ticket correctamente al agente técnico correspondiente, necesito que el equipo o el cliente **proporcione la siguiente información**:
+Para poder asistir correctamente al cliente **Steven Lara**, necesito que se proporcione:
 
-1. **Confirmación del producto** con el que tiene el problema.
-2. **El mensaje de error exacto** que aparece en pantalla.
-3. **Descripción clara del problema de hardware** que está experimentando.
+1. ✅ **Descripción real del problema** (sin variables de plantilla sin reemplazar)
+2. ✅ **Tipo de problema correcto**: ¿Es un problema de facturación, técnico o relacionado con un pedido?
+3. ✅ **Confirmación del producto** afectado
 
-Por favor, actualice el ticket con los datos completos para continuar con la atención. 🙏",Reach can north fill.
-7892,Refund request,Critical,"## ⚠️ Atención: Ticket con Plantilla Sin Completar
+Una vez recibida la información correcta, procederé a enrutar el ticket al agente correspondiente de inmediato. 🙏",
+8306,Billing inquiry,High,"---
 
-Antes de proceder con el enrutamiento, he detectado un **problema importante en el ticket #7892**:
+## ✅ Respuesta al Cliente — Christopher Bailey
 
-La descripción del ticket contiene una **variable sin reemplazar**: `{product_purchased}`, lo que indica que el mensaje del cliente fue generado con una plantilla que **no se completó correctamente**.
+---
+
+Estimado **Christopher Bailey**,
+
+Gracias por contactarnos respecto a su **GoPro Hero**. Hemos revisado su caso (Ticket **#8306**) y queremos informarle lo siguiente:
+
+### 🔍 Sobre su problema de acceso
+
+Entendemos que está experimentando un error de **""Credenciales Inválidas""** a pesar de usar la información correcta, y que ya realizó un **restablecimiento de fábrica** sin obtener resultados.
+
+Le recomendamos los siguientes pasos mientras nuestro equipo especializado revisa su caso:
+
+1. ✅ Intente **restablecer su contraseña** desde la opción *""¿Olvidaste tu contraseña?""* en el portal de GoPro
+2. ✅ Pruebe acceder desde un **navegador diferente** o en modo incógnito
+3. ✅ Verifique que no haya **bloqueos de red o firewall** en su conexión
+4. ✅ Intente acceder usando **datos móviles** para descartar problemas de red local
+
+### 📌 Estado de su caso
+
+Su ticket ha sido **escalado con prioridad High** y recibirá una respuesta de nuestro equipo especializado en un plazo máximo de **2 horas**.
+
+Lamentamos los inconvenientes ocasionados y estamos comprometidos a resolver su situación a la brevedad.
+
+Atentamente,
+**Centro de Soporte al Cliente**",
+708,Cancellation request,Critical,"---
+
+> 📌 **Nota del Supervisor:** Adicionalmente, hemos detectado que la descripción del ticket contiene **texto de plantilla sin completar**. Se recomienda al equipo de soporte revisar el sistema de generación de tickets para corregir este error técnico antes de procesar futuros casos.",Run really series threat daughter.
+4389,Cancellation request,Critical,"---
+
+Estimado **Jeremy Brown**, en nombre de nuestro equipo de soporte, lamentamos profundamente la experiencia que ha tenido con su **Sony Xperia**. Entendemos su frustración y queremos asegurarnos de brindarle una solución real. Nuestro equipo está revisando su caso con carácter **urgente** y nos pondremos en contacto con usted a la brevedad para ofrecerle las mejores alternativas. 🙏",Short build pass month fund seat structure concern.
+764,Product inquiry,Medium,"## ⚠️ Ticket #764 — Problema Detectado Antes de Enrutar
+
+Antes de proceder, he identificado un **problema en la descripción del ticket**:
+
+El mensaje del cliente contiene **variables sin reemplazar** (placeholders sin resolver):
+
+- `{product_purchased}` aparece **dos veces** en el texto, en lugar del nombre real del producto.
 
 ---
 
@@ -61,69 +79,73 @@ La descripción del ticket contiene una **variable sin reemplazar**: `{product_p
 
 | Campo | Detalle |
 |---|---|
-| **Ticket** | #7892 |
-| **Cliente** | Wanda Graham |
-| **Tipo** | Solicitud de Reembolso |
-| **Prioridad** | 🔴 Critical |
-| **Producto** | Apple AirPods |
+| **Cliente** | Joshua Schmidt |
+| **Producto** | Sony PlayStation |
+| **Tipo** | Product Inquiry / Cancellation Request |
+| **Prioridad** | Medium |
 
 ---
 
-### 🚨 Acciones Requeridas
+### 🔍 Análisis del Contenido
 
-1. **Verificar la descripción real del problema** — La descripción contiene texto de plantilla sin completar (`{product_purchased}`), por lo que **no tenemos información clara sobre el problema específico de Wanda**.
+A pesar del error en las variables, puedo identificar **dos posibles problemas** en la descripción:
 
-2. **Contactar al cliente** — Dado que ya ha contactado soporte múltiples veces sin resolución, se recomienda contactarla **proactivamente** para:
-   - Confirmar el detalle exacto de su solicitud de reembolso.
-   - Recopilar información completa sobre el problema con sus **Apple AirPods**.
-
-3. **Una vez obtenida la información completa**, el ticket será enrutado al **Agente de Facturación** por tratarse de una solicitud de reembolso.
+1. **Problema de conectividad Wi-Fi** → La consola no detecta redes (problema técnico).
+2. **Dificultad para encontrar una opción/función** en el dispositivo → Podría ser técnico o una consulta de producto.
+3. **Solicitud de cancelación** mencionada en el asunto → Podría implicar gestión de pedidos.
 
 ---
 
-> 📢 **Estimada Wanda Graham**, lamentamos los inconvenientes ocasionados. Hemos detectado que su mensaje no llegó correctamente a nuestro sistema. ¿Podría describirnos con detalle cuál es el problema que está experimentando con sus **Apple AirPods** y qué tipo de reembolso está solicitando? Le atenderemos con la **máxima prioridad**. 🙏",
-2695,Refund request,High,"---
+### ❗ Acción Requerida
 
-Estimado **David Jones Jr.**, hemos procesado tu ticket y necesitamos un poco más de información para continuar con tu solicitud. Por favor, responde con los datos indicados arriba y con gusto te asistiremos a la brevedad. 😊",
-1907,Technical issue,High,"## ⚠️ Ticket #1907 — Problema Detectado Antes de Enrutar
+Para poder **enrutar correctamente este ticket** y brindarle la mejor asistencia a Joshua, necesito que el equipo o el sistema **corrija la descripción** y confirme:
 
-Antes de proceder, he identificado un problema importante con este ticket:
+1. ¿El `{product_purchased}` debe reemplazarse por **Sony PlayStation**? ✅ *(parece indicarlo el campo Producto)*
+2. ¿La **solicitud de cancelación** se refiere a:
+   - ¿Una **suscripción o servicio** (facturación)?
+   - ¿Un **pedido de compra** (órdenes)?
+3. ¿Cuál es el problema principal a resolver: el **Wi-Fi**, la **navegación del menú**, o la **cancelación**?
+
+Por favor, proporcione la información corregida para proceder con el enrutamiento adecuado. 🙏",System consider now history on impact.
+6728,Product inquiry,High,"---
+
+Estimado **Gregory Vargas**, gracias por contactarnos. Hemos recibido su ticket **#6728** y nuestro equipo técnico está revisando su caso.
+
+Para poder ayudarle de manera eficiente con la pérdida de datos en su **Canon DSLR Camera** y el error `download_metadata`, le pedimos amablemente que nos proporcione los detalles mencionados anteriormente. Una vez que los recibamos, procederemos con el diagnóstico y la solución lo antes posible. 🎯",
+8083,Refund request,Critical,"---
+
+Estimado **Gregory Jones**, su caso ha sido atendido con **máxima prioridad**. Nuestro equipo técnico especializado está trabajando en una solución para el problema de congelamiento en su **MacBook Pro**. Recibirá una respuesta en un plazo máximo de **2 horas**. Lamentamos los inconvenientes ocasionados. 🙏",On benefit teach simply performance window.
+206,Refund request,Medium,"---
+
+Estimada **Mary Williams**,
+
+Hemos recibido su solicitud (Ticket #206) y hemos detectado que la descripción enviada contiene **información incompleta** (variables de plantilla sin completar). Para poder gestionar correctamente su solicitud de reembolso relacionada con su **Sony Xperia**, necesitamos que nos proporcione:
+
+1. 📦 **¿Cuál es el problema específico con la entrega?**
+2. 📅 **¿Cuál fue la fecha de compra del producto?**
+3. 📝 **¿Qué acción desea realizar exactamente?** (reembolso, cambio, seguimiento de pedido, etc.)
+
+Quedamos a su disposición para resolverlo a la brevedad. 🙏",Employee support economy themselves should remember.
+7628,Technical issue,Low,[],Television lead view movie executive up.
+3032,Technical issue,Critical,"---
+
+## ✉️ Respuesta al Cliente
 
 ---
 
-### 🔴 Descripción Inválida / Corrupta
+Estimado **Michael Webb**,
 
-La descripción del ticket contiene **texto malformado y variables sin resolver**, lo que indica que el mensaje del cliente **no se generó correctamente**:
+Gracias por contactarnos. Hemos recibido su ticket **#3032** y lo hemos asignado a nuestro equipo técnico con **prioridad crítica**.
 
-- `{product_purchased}` → variable sin reemplazar
-- `{ProductId} : {ProductID}` → campos vacíos
-- Fragmentos de código (`// Create a new thread`, `#endregion`, `raint`) → contenido técnico ajeno al ticket
+Sin embargo, hemos notado que la descripción de su caso contiene información incompleta. Para poder asistirle de manera efectiva, le pedimos amablemente que nos proporcione:
 
----
+- 📌 **¿Cuál es el comportamiento exacto del dispositivo?** (no enciende, no responde, emite sonidos extraños, etc.)
+- 📌 **¿Qué versión de software tenía antes de la actualización?**
+- 📌 **¿Cuándo exactamente comenzó el problema?**
 
-### ✅ Lo que sí está claro:
+Nuestro equipo técnico le contactará en un plazo máximo de **2 horas** para resolver su caso.
 
-| Campo | Detalle |
-|---|---|
-| **Cliente** | Allison King |
-| **Producto** | MacBook Pro |
-| **Tipo** | Technical Issue |
-| **Prioridad** | High |
-| **Asunto** | Payment issue |
+Lamentamos los inconvenientes ocasionados.
 
-> ⚠️ Nótese también una **inconsistencia**: el tipo es *""Technical Issue""* pero el asunto menciona *""Payment issue""*, lo que requiere clarificación antes de enrutar.
-
----
-
-### 📋 Acción Requerida
-
-Para poder asistir correctamente a **Allison King**, necesitamos:
-
-1. **¿Cuál es el problema real?** ¿Es un problema técnico con el MacBook Pro o un problema de pago/facturación?
-2. **Reenviar el ticket con la descripción correcta**, sin variables sin resolver ni fragmentos de código.
-
-Por favor, corrija y reenvíe el ticket para proceder con el enrutamiento adecuado. 🙏",
-890,Technical issue,Low,"---
-
-> 📌 **Prioridad:** 🟢 Low — No requiere escalamiento inmediato.
-> El caso está siendo gestionado por el equipo técnico. Se notificará a **Heather Curtis** con los pasos a seguir.",Stage world among always mind but option.
+Atentamente,
+**Centro de Soporte al Cliente** 🛠️",Phone answer history good once require mention however.

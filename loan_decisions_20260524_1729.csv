@@ -1,0 +1,11 @@
+loan_id,cibil_score,loan_amount,risk_level,ai_recommendation,final_decision,source,thread_id
+LP014,451,361087,critical,reject,reject,automatic,batch-LP014
+LP016,419,18573392,critical,reject,reject,automatic,batch-LP016
+LP023,411,32348740,critical,reject,,automatic,batch-LP023
+LP043,321,12018070,critical,reject,reject,automatic,batch-LP043
+LP031,879,20072981,high,reject,reject,automatic,batch-LP031
+LP028,637,34079713,medium,review,,automatic,batch-LP028
+LP002,301,23985747,critical,reject,reject,automatic,batch-LP002
+LP021,553,38114054,high,reject,,automatic,batch-LP021
+LP011,507,21500096,high,reject,reject,automatic,batch-LP011
+LP037,494,18638945,critical,reject,reject,automatic,batch-LP037
